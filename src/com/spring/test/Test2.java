@@ -1,4 +1,4 @@
-// Batch Updates with PreparedStatement
+//  Jdbc Batch Updates with PreparedStatement
 
 package com.spring.test;
 

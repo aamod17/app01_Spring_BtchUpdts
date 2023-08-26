@@ -1,4 +1,4 @@
-// Batch Updates with Statement
+// jdbc Batch Updates with Statement
 
 package com.spring.test;
 
@@ -25,17 +25,18 @@ public class Test1 {
 			statement.addBatch("delete from employee where eid= 333");
 			int[] rowCount = statement.executeBatch();
 			//first way
-			for(int x : rowCount) {
+			/*for(int x : rowCount) {
 				System.out.println("Row Count: "+x);
 				
 			}
+			*/
 			//second way
-			/*
+			
 			for(int x = 0; x<rowCount.length; x++) {
 				
 				System.out.println("Row Count: "+rowCount[x]);
 			}
-			*/
+			
 			
 		} catch (ClassNotFoundException|SQLException e) {
 			e.printStackTrace();
